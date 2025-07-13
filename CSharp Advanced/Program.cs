@@ -38,23 +38,34 @@ namespace CSharp_Advanced
             #endregion
 
             #region 4. Sort the employees based on their hire date then Print the sorted array.
-            Employees[] EmpArr = new Employees[3];
+            //Employees[] EmpArr = new Employees[3];
 
-            EmpArr[0] = new Employees(1, "Ali", SecurityLVL.DBA, 8000, new DateTime(2020, 5, 10), Gender.Male);
-            EmpArr[1] = new Employees(2, "Sara", SecurityLVL.Guest, 4000, new DateTime(2022, 3, 15), Gender.Female);
-            EmpArr[2] = new Employees(3, "Omar", SecurityLVL.Secretary, 10000, new DateTime(2019, 1, 25), Gender.Male);
+            //EmpArr[0] = new Employees(1, "Ali", SecurityLVL.DBA, 8000, new DateTime(2020, 5, 10), Gender.Male);
+            //EmpArr[1] = new Employees(2, "Sara", SecurityLVL.Guest, 4000, new DateTime(2022, 3, 15), Gender.Female);
+            //EmpArr[2] = new Employees(3, "Omar", SecurityLVL.Secretary, 10000, new DateTime(2019, 1, 25), Gender.Male);
 
-            Array.Sort(EmpArr, (x, y) => x.HireDate.CompareTo(y.HireDate)); // i Serched for it (generic) IComparer
-            foreach (var emp in EmpArr)
-            {
-                Console.WriteLine(emp);
-                Console.WriteLine("******************************");
-            }
-            Console.WriteLine("Boxing/Unboxing occurred: 0");// there's no object 
+            //Array.Sort(EmpArr, (x, y) => x.HireDate.CompareTo(y.HireDate)); // i Searched for it (generic) IComparer
+            //foreach (var emp in EmpArr)
+            //{
+            //    Console.WriteLine(emp);
+            //    Console.WriteLine("******************************");
+            //}
+            //Console.WriteLine("Boxing/Unboxing occurred: 0");// there's no object 
 
             #endregion
 
+            #region 5-Design a program for a library management system where:
+            Book[] library = new Book[2];
 
+            library[0] = new EBook("C# Basics", "John Doe", "123456789", 2.5);
+            library[1] = new PrintedBook("Mastering C#", "Jane Smith", "987654321", 450);
+
+            foreach (Book book in library)
+            {
+                Console.WriteLine(book);
+                Console.WriteLine("--------------------");
+            }
+            #endregion
         }
     }
 }
