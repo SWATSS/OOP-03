@@ -57,8 +57,8 @@ namespace CSharp_Advanced
             #region 5-Design a program for a library management system where:
             Book[] library = new Book[2];
 
-            library[0] = new EBook("C# Basics", "John Doe", "123456789", 2.5);
-            library[1] = new PrintedBook("Mastering C#", "Jane Smith", "987654321", 450);
+            library[0] = new EBook("C# Basics", "Ahmed Taalab", "123456789", 2.5);
+            library[1] = new PrintedBook("Mastering C#", "Khaled Metwaly", "987654321", 450);
 
             foreach (Book book in library)
             {
